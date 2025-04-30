@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christer Fjallroth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+            scroll-padding-top: 4rem;
+        }
+        section {
+            scroll-snap-align: start;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #hero {
+             min-height: calc(100vh - 4rem); 
+        }
+        section > div {
+            width: 100%; 
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50 h-16"> <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-full"> <div class="flex space-x-4">
+                    <div>
+                        <a href="#hero" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                            <span class="font-bold text-lg">Christer Fjallroth</span> </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#about" class="py-5 px-3 text-gray-700 hover:text-blue-600">About</a>
+                        <a href="#skills" class="py-5 px-3 text-gray-700 hover:text-blue-600">Skills</a>
+                        <a href="#projects" class="py-5 px-3 text-gray-700 hover:text-blue-600">Projects</a>
+                        <a href="#contact" class="py-5 px-3 text-gray-700 hover:text-blue-600">Contact</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="bg-blue-600 text-white py-0">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Christer Fjallroth</h1> <p class="text-xl md:text-2xl mb-8">Engineer & Software Developer</p>
+            <a href="#projects" class="bg-white text-blue-600 font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white py-0">
+        <div class="max-w-4xl mx-auto px-4 py-16 md:py-24">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+             <div class="text-lg text-gray-700 leading-relaxed space-y-4">
+                <p>
+                    Hello! I'm Christer. I leverage my background as an engineer in the Energy sector to build practical and efficient software solutions.
+                    My engineering experience provides a strong foundation in analytical thinking, problem-solving, and project management, which I apply directly to software development.
+                </p>
+                 <p>
+                    Currently, I'm focused on expanding my skillset by learning Java/Spring Boot. I add value by leveraging my combined engineering and software experience to contribute to innovative projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-gray-50 py-0">
+        <div class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+            <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                 <div>
+                    <h3 class="text-xl font-semibold mb-4">Languages</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java</li>
+                        <li>SQL (Basic)</li>
+                        <li>C++ (Arduino/ESP)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Frameworks & Libraries</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>REST APIs</li>
+                        <li>Pandas</li>
+                        <li>Numpy</li>
+                        <li>Matplotlib</li>
+                        <li>PySerial</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Spring Boot</li>
+                        <li>Tailwind CSS</li>
+                        <li>React</li>
+                        <li>OpenAI API</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Tools & Platforms</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Arduino IDE</li>
+                        <li>Docker (Basic)</li>
+                        <li>IntelliJ IDEA</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Engineering & Other</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>Problem Solving</li>
+                        <li>Data Analysis & Visualization</li>
+                        <li>Hardware Integration</li>
+                        <li>Sensor Data Acquisition</li>
+                        <li>IoT</li>
+                        <li>Project Management</li>
+                        <li>Renewable Energy Systems</li>
+                        <li>Oil & Gas Processes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-white py-0">
+        <div class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+            <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://lines-mag.at/trailpartie/wp-content/uploads/2025/03/20250322_TP1_T1_1_Training_047.jpg" alt="MatesRace Placeholder" class="w-full h-48 object-cover">
+                   <div class="p-6 flex flex-col flex-grow">
+                       <h3 class="text-xl font-semibold mb-2">MatesRace</h3>
+                       <p class="text-gray-700 mb-4 flex-grow">
+                           A web application enabling friendly cycling competitions using Strava data. Users can create accounts, authorize Strava access, create/join races, submit rides, and view leaderboards based on segment times. Inspired by a Mike Boyd concept.
+                       </p>
+                        <div class="mb-4">
+                           <span class="inline-block bg-cyan-200 text-cyan-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">React</span>
+                           <span class="inline-block bg-green-200 text-green-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Node.js</span>
+                           <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Express</span>
+                           <span class="inline-block bg-lime-200 text-lime-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">MongoDB</span>
+                           <span class="inline-block bg-orange-200 text-orange-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Strava API</span>
+                           <span class="inline-block bg-blue-200 text-blue-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Passport.js</span>
+                           <span class="inline-block bg-purple-200 text-purple-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">EJS</span>
+                        </div>
+                       <div class="flex space-x-4 mt-auto">
+                           <a href="https://github.com/Fjallroth/matesRace" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">View Code</a>
+                            </div>
+                   </div>
+               </div>
+
+                <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://cdn.prod.website-files.com/64d14310c4accecbf82f0e9f/652ebb66ecd4c40f0595f610_Spotter-Hero-04.webp" alt="Spotter Plot Creator Placeholder" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">Spotter Plot Creator</h3>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            Python script with a GUI (Tkinter) to read Sofar Spotter wave data (CSV). Creates plots and optionally generates an AI report (OpenAI API) analyzing the dataset. Saves plots (PNG) and report (TXT).
+                        </p>
+                        <div class="mb-4">
+                            <span class="inline-block bg-blue-200 text-blue-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Python</span>
+                            <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Tkinter</span>
+                            <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Pandas</span>
+                            <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Matplotlib</span>
+                            <span class="inline-block bg-green-200 text-green-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">OpenAI API</span>
+                        </div>
+                        <div class="flex space-x-4 mt-auto">
+                            <a href="https://github.com/Fjallroth/sofarSpotterPlots" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-50 rounded-lg shadow-lg overflow-hidden flex flex-col">
+                     <img src="https://rbr-global.com/wp-content/uploads/2017/11/RBRduo%C2%B3-T.D.png" alt="RBR Wave Data Analysis Placeholder" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">RBR Wave Data Analysis</h3>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            Python script using Oceanlyz to process RBR wave data from Ruskin software. Calculates bulk parameters (Hs, Tp, Tm), generates plots (time series, scatter), and outputs key statistics.
+                        </p>
+                         <div class="mb-4">
+                            <span class="inline-block bg-blue-200 text-blue-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Python</span>
+                            <span class="inline-block bg-purple-200 text-purple-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Oceanlyz</span>
+                            <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Numpy</span>
+                            <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Pandas</span>
+                            <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Matplotlib</span>
+                             <span class="inline-block bg-gray-200 text-gray-800 text-xs font-semibold mr-2 mb-1 px-2.5 py-0.5 rounded">Seaborn</span>
+                        </div>
+                        <div class="flex space-x-4 mt-auto">
+                            <a href="https://github.com/Fjallroth/RBRWaves" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-50 py-0">
+        <div class="max-w-3xl mx-auto px-4 py-16 md:py-24">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            <p class="text-center text-lg text-gray-700 mb-8">
+                Interested in collaborating or have any questions? Feel free to reach out!
+            </p>
+            <div class="text-center space-x-6">
+                 <a href="https://www.linkedin.com/in/christer-fjallroth/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline text-lg">LinkedIn</a>
+                 <a href="https://github.com/Fjallroth/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline text-lg">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="max-w-6xl mx-auto px-4 text-center text-sm">
+            &copy; 2025 [Your Name]. All rights reserved. </div>
+    </footer>
+
+</body>
+</html>
